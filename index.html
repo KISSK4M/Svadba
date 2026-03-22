@@ -689,33 +689,26 @@
         <div class="card fade-in">
     <div class="card-icon">👗</div>
     <h3>Дресс-код</h3>
-    <p>
-        <strong>Casual Elegant</strong><br>
-    </p>
     
-    <div style="position: relative; display: inline-block; margin-top: 10px;">
-        <span style="cursor: pointer; font-size: 0.75rem; color: var(--burgundy); border-bottom: 1px dashed var(--dusty-rose);"
-              onmouseenter="showDresscodeTooltip()"
-              onmouseleave="hideDresscodeTooltip()">
-            📸 Наведите для примеров образов
-        </span>
-        
-        <div id="tooltip" style="display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: white; border-radius: 16px; padding: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); width: 200px; z-index: 100; margin-bottom: 10px;">
-            <img src="images/DRESS.jpg" 
-                 style="width: 100%; border-radius: 12px; margin-bottom: 5px;"
-                 onerror="this.src='https://images.unsplash.com/photo-1617137968427-85924c8002b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
-            <p style="font-size: 0.6rem; text-align: center; margin-top: 5px;">Примеры Casual Elegant</p>
-        </div>
+    <button onclick="toggleDresscode()" 
+            style="margin-top: 12px; background: var(--dusty-rose); border: none; padding: 10px; border-radius: 25px; width: 100%; cursor: pointer; color: var(--burgundy); font-size: 0.8rem;">
+        📸 Показать примеры
+    </button>
+    
+    <div id="dresscodeImages" style="display: none; margin-top: 15px;">
+        <img src="images/DRESS.jpg" 
+             style="width: 100%; border-radius: 15px; margin-bottom: 10px;">
     </div>
 </div>
 
 <script>
-function showDresscodeTooltip() {
-    document.getElementById('tooltip').style.display = 'block';
-}
-
-function hideDresscodeTooltip() {
-    document.getElementById('tooltip').style.display = 'none';
+function toggleDresscode() {
+    var img = document.getElementById('dresscodeImages');
+    if (img.style.display === 'none') {
+        img.style.display = 'block';
+    } else {
+        img.style.display = 'none';
+    }
 }
 </script>
 
