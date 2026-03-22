@@ -609,23 +609,55 @@
 
         <!-- Детали события -->
         <section id="details">
-            <h2 class="section-title fade-in">Детали события</h2>
-            <div class="details-cards">
-                <div class="card fade-in"><div class="card-icon">📅</div><h3>Дата</h3><p>10 Июля 2026<br>Пятница</p></div>
-                <div class="card fade-in"><div class="card-icon">⏰</div><h3>Время</h3><p>Сбор гостей с 15:00<br>Церемония в 15:30</p></div>
-                <div class="card fade-in"><div class="card-icon">📍</div><h3>Место</h3><p>База отдыха "Аллюр"<br>ул. Новоселькая 59</p></div>
-                <div class="card fade-in"><div class="card-icon">👗</div><h3>Дресс-код</h3><p>Casual Elegant<br>Элегантная повседневность</p></div>
-            </div>
-        </section>
+    <h2 class="section-title fade-in">Детали события</h2>
+    <div class="details-cards">
+        <!-- Карточка ДАТА -->
+        <div class="card fade-in">
+            <div class="card-icon">📅</div>
+            <h3>Дата</h3>
+            <p>10 Июля 2026<br>Пятница</p>
+        </div>
+        
+        <!-- Карточка ВРЕМЯ -->
+        <div class="card fade-in">
+            <div class="card-icon">⏰</div>
+            <h3>Время</h3>
+            <p>Сбор гостей с 14:00<br>Церемония в 15:30</p>
+        </div>
+        
+        <!-- ⭐⭐⭐ КАРТОЧКА МЕСТО (ИСПРАВЛЕНА) ⭐⭐⭐ -->
+        <div class="card fade-in">
+            <div class="card-icon">📍</div>
+            <h3>Место</h3>
+            <p>
+                <a href="https://yandex.ru/maps/?text=База отдыха Аллюр ул. Новосельская 59" 
+                   target="_blank" 
+                   style="color: var(--burgundy); text-decoration: none; border-bottom: 1px dashed var(--dusty-rose); transition: all 0.3s;">
+                    База отдыха "Аллюр"<br>ул. Новосельская 59
+                </a>
+            </p>
+        </div>
+        
+        <!-- Карточка ДРЕСС-КОД -->
+        <div class="card fade-in">
+            <div class="card-icon">👗</div>
+            <h3>Дресс-код</h3>
+            <p>Casual Elegant<br>Элегантная повседневность</p>
+        </div>
+    </div>
+</section>
 
         <!-- Программа дня -->
         <section id="schedule">
             <h2 class="section-title fade-in">Программа дня</h2>
             <div class="timeline fade-in">
-                <div class="timeline-item"><div class="timeline-time">15:00 – 15:30</div><div class="timeline-desc">🍾 Сбор гостей, приветственный фуршет</div></div>
-                <div class="timeline-item"><div class="timeline-time">15:30 – 15:45</div><div class="timeline-desc">💍 Торжественная церемония</div></div>
-                <div class="timeline-item"><div class="timeline-time">15:45 – 16:15</div><div class="timeline-desc">🥂 Фуршет & фотографии</div></div>
-                <div class="timeline-item"><div class="timeline-time">16:15 – поздний вечер</div><div class="timeline-desc">🍽️ Банкет, танцы и душевный вечер</div></div>
+                <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-desc">🚌 Трансфер</div></div>
+                <div class="timeline-item"><div class="timeline-time">15:00</div><div class="timeline-desc">🍾 Приветственный фуршет</div></div>
+                <div class="timeline-item"><div class="timeline-time">15:30</div><div class="timeline-desc">💍 Торжественная церемония</div></div>
+                <div class="timeline-item"><div class="timeline-time">16:15</div><div class="timeline-desc">🍽️ Банкет</div></div>
+                <div class="timeline-item"><div class="timeline-time">20:00</div><div class="timeline-desc">🎂 Торт</div></div>
+                <div class="timeline-item"><div class="timeline-time">20:30</div><div class="timeline-desc">🎉 Финал</div></div>
+                <div class="timeline-item"><div class="timeline-time">23:00</div><div class="timeline-desc">🏡 Завершение вечера</div></div>
             </div>
         </section>
 
@@ -634,10 +666,10 @@
             <h2 class="section-title fade-in">Галерея воспоминаний</h2>
             <div class="gallery-grid">
                 <!-- ⭐ ЗАМЕНИТЕ ЭТИ ССЫЛКИ НА ВАШИ ФОТО ⭐ -->
-                <img src="images/gallery1.jpg" alt="декор" onerror="this.src='https://images.unsplash.com/photo-1532712938316-172213ef4e06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
-                <img src="images/gallery2.jpg" alt="кольца" onerror="this.src='https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
-                <img src="images/gallery3.jpg" alt="букет" onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
-                <img src="images/gallery4.jpg" alt="природа" onerror="this.src='https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                <img src="images/CLUB.jpg"
+                <img src="images/EKB.jpg" 
+                <img src="images/ARMY.jpg" 
+                <img src="images/EXITARMY.jpg" 
             </div>
         </section>
 
@@ -691,8 +723,8 @@
         <section id="contacts">
             <h2 class="section-title fade-in">Свяжитесь с нами</h2>
             <div class="contacts-flex">
-                <div class="contact-item fade-in"><a href="tel:+79991234567">📞 +7 (999) 123-45-67</a></div>
-                <div class="contact-item fade-in"><a href="https://wa.me/79991234567" target="_blank">💬 WhatsApp / Telegram</a></div>
+                <div class="contact-item fade-in"><a href="tel:+79082458787">📞 +7 (908) 245-87-87</a></div>
+                <div class="contact-item fade-in"><a href="https://t.me/byutattoo" target="_blank">💬 Telegram</a></div>
                 <div class="contact-item fade-in"><a href="mailto:narykovaa@inbox.ru">✉️ narykovaa@inbox.ru</a></div>
             </div>
         </section>
