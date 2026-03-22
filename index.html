@@ -12,6 +12,53 @@
             padding: 0;
             box-sizing: border-box;
         }
+        img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Фото в истории (квадратные) */
+.story-photos img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Фото в галерее (4:3) */
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Защита от размытия при масштабировании */
+.story-photos img,
+.gallery-grid img {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Для ретина-экранов (iPhone, iPad) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .story-photos img,
+    .gallery-grid img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
 
         body {
             font-family: 'Montserrat', sans-serif;
